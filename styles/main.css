@@ -6,6 +6,8 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 34px;
+    box-sizing: border-box;
+    padding: 0 20px;
 }
 
 h1 {
@@ -27,12 +29,11 @@ a:hover {
 .text-section,
 .ticket-section,
 .statistic-section-content,
-.works-section,
 .footer-content {
-    max-width: 1120px;
+    max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .header {
@@ -88,15 +89,20 @@ a:hover {
     
 }
 
-.design-section {
-    width: 1031px;
+.design-section-background {
+    /* width: 1031px; */
     height: 960px;
-    background: url(./../images/ellipse.svg);
+    background: no-repeat url(./../images/ellipse.svg);
 }
 
-.design-section-blocks {
+.design-section-row img {
     width: 675px;
     height: 335px;
+}
+
+.design-section-row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .ticket-section {
@@ -106,6 +112,12 @@ a:hover {
 .statistic-section {
     background: #000;
     min-height: 1000px;
+}
+
+.statistic-section-background {
+    background: url(./../images/ellipse-group.svg);
+    width: 1798;
+    height: 1944;
 }
 
 .statistic-section-content {
@@ -118,6 +130,7 @@ a:hover {
 
 .work-section-row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .work-section-blocks {
@@ -133,6 +146,17 @@ a:hover {
 
 .work-section-blocks:nth-child(2) {
     background: url(./../images/work2.svg);
+}
+
+.button {
+    width: 239px;
+    height: 54px;
+    background: linear-gradient(273.43deg, #5C9FF9 -16.34%, #0058DC 97.2%), #C4C4C4;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
 }
 
 .footer {
