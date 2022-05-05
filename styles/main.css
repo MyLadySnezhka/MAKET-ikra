@@ -1,7 +1,7 @@
 .body-container {
     max-width: 1920px;
     min-height: 1800px;
-    margin: 0 auto;
+    margin: 10px auto;
     font-family: Graphik LCG;
     font-weight: 400;
     font-size: 18px;
@@ -26,23 +26,26 @@ a:hover {
 .header-content,
 .text-section,
 .ticket-section,
+.statistic-section-content,
 .works-section,
 .footer-content {
-    max-width: 1100px;
+    max-width: 1120px;
     margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .header {
     max-width: 1920px;
     display: flex;
-    align-items: center;
-    background-color: #000;
-    height: 800px;
+    background: #000;
+    height: 840px;
+    
 }
 
 .header-img-background {
     height: 924px;
-    width: 1000px;
+    width: 1005px;
     background: url(./../images/group-photo.svg);
 }
 
@@ -50,7 +53,9 @@ a:hover {
     width: 778px;
     height: 700px;
     background: url(./../images/notebook.svg);
-    margin: 500px 50px 10px 10px;
+    background-size: cover;
+    /* transform: rotate(15deg); */
+    margin: 278px 100px 0 0;
 }
 
 .header-content {
@@ -60,7 +65,12 @@ a:hover {
     padding: 0 10px;
 }
 
-
+.logo {
+    margin-top: 284px;
+    width: 177px;
+    height: 81px;
+    background: url(./../images/ikra-logo.svg);
+}
 
 .header-text {
     font-weight: 400;
@@ -84,14 +94,23 @@ a:hover {
     background: url(./../images/ellipse.svg);
 }
 
+.design-section-blocks {
+    width: 675px;
+    height: 335px;
+}
+
 .ticket-section {
 
 }
 
+.statistic-section {
+    background: #000;
+    min-height: 1000px;
+}
 
-
-
-
+.statistic-section-content {
+    color: #fff;
+}
 
 .works-section {
 
@@ -122,5 +141,19 @@ a:hover {
 }
 
 .footer-content {
+    display: flex;
+    align-items: center;
     color: #fff;
+}
+
+.footer-row-content {
+
+}
+
+.footer-line {
+
+}
+
+.footer-contecs {
+
 }
