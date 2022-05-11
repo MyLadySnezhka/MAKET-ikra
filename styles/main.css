@@ -1,19 +1,17 @@
 .body-container {
-    max-width: 1920px;
-    min-height: 1800px;
-    margin: 10px auto;
+    /* width: 100%;  */
+    width: 1920px;  
+    min-height: 100%;
+    margin: 0 auto;
     font-family: Graphik LCG;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 34px;
     box-sizing: border-box;
     padding: 0 20px;
 }
 
-h1 {
+.title-text {
     font-weight: 700;
     font-size: 45px;
-    line-height: 74px;
+    margin-bottom: 14px;
 }
 
 a {
@@ -25,127 +23,225 @@ a:hover {
     cursor: pointer;
 }
 
-.header-content,
+/* .header-content-wrapper, */
 .text-section,
 .ticket-section,
 .statistic-section-content,
+.works-section,
 .footer-content {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding-top: 34px;
+    padding-left: 24px;
 }
 
 .header {
-    max-width: 1920px;
-    display: flex;
     background: #000;
     height: 840px;
-    
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header-img-background {
-    height: 924px;
+    background-repeat: no-repeat;
+    background-image: url(../images/group-photo.svg);
     width: 1005px;
-    background: url(./../images/group-photo.svg);
+    height: 924px;  
 }
 
-.header-img {
-    width: 778px;
-    height: 700px;
-    background: url(./../images/notebook.svg);
-    background-size: cover;
-    /* transform: rotate(15deg); */
-    margin: 278px 100px 0 0;
+.header-content-wrapper {
+    display: flex;
+    
 }
 
 .header-content {
-    box-sizing: border-box;
-    max-width: 480px;
-    color: #fff;
-    padding: 0 10px;
+    width: 464px;
+    margin-right: 44px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+
 }
 
 .logo {
     margin-top: 284px;
+    margin-bottom:35px;
     width: 177px;
     height: 81px;
     background: url(./../images/ikra-logo.svg);
-}
-
-.header-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 34px;
 }
 
 .header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 23px;
+    color: #F2F2F2;
+    margin-top: 88px;
+    margin-left: 4px;
 }
 
-.text-section {
-    
+.overlay-image {
+    box-sizing: border-box;
+    padding-top: 212px;
+    transform: skew(-1deg, 2deg) scaleY(1.12) rotate(-2deg);
+}
+
+.text-section-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    width: 780px;
+    margin-bottom: 10px;
+}
+
+/* серая линия */
+.line {
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .design-section-background {
-    /* width: 1031px; */
-    height: 960px;
+    /* height: 960px; */
+    /* height: 1070px; */
     background: no-repeat url(./../images/ellipse.svg);
 }
 
-.design-section-row img {
+.design-section-background img {
     width: 675px;
     height: 335px;
 }
 
-.design-section-row {
+.design-section-row1 {
+    width:1200px;
+    margin: 0 auto;
+    margin-bottom: 45px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.design-section-text {
+    width: 340px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    color: #333333;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    text-align: right;
+}
+
+.design-section-text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.small-line {
+    width: 44px;
+    height: 5px;
+    background: #FD3300;
+}
+
+.design-section-row2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+.design-section-row3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 63px;
+    margin-left: 112px;
+    margin-bottom: 106px;
 }
 
 .ticket-section {
+    
+}
 
+.ticket-section-shedule {
+    height: 827px;
+    background-image: url(../images/tickets.svg);
+    background-repeat: no-repeat;
 }
 
 .statistic-section {
     background: #000;
-    min-height: 1000px;
+    height: 1000px;
+    padding-top: 90px;
 }
 
 .statistic-section-background {
     background: url(./../images/ellipse-group.svg);
-    width: 1798;
-    height: 1944;
+    
 }
 
 .statistic-section-content {
     color: #fff;
 }
 
-.works-section {
-
+.statistic-section-counter {
+    padding-top: 50px;
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-around;
+    margin-bottom: 190px;
 }
 
-.work-section-row {
+.statistic-section-counter-blocks {
+    text-align: center;
+}
+
+.statistic-section-counter-big-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 51px;
+    color: #FD351E;
+}
+
+.statistic-section-mobile {
+    display: flex;
+    
+}
+
+.statistic-section-mobile-text {
+    width: 630px;
+}
+
+.works-section {
+    margin-bottom: 66px;
+}
+
+.works-section-row {
+    display: flex;
+    height: 300px;;
+}
+
+.works-section-text {
+    width: 355px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.work-section-images {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .work-section-blocks {
-    margin: 23px 25px 23px 21px;
+    box-sizing: border-box;
     width: 542px;
     height: 258px;
     border-radius: 5px;
-}
-
-.work-section-blocks:nth-child(1) {
-    background: url(./../images/work1.svg);
-}
-
-.work-section-blocks:nth-child(2) {
-    background: url(./../images/work2.svg);
 }
 
 .button {
@@ -157,27 +253,45 @@ a:hover {
     font-weight: 600;
     font-size: 14px;
     line-height: 23px;
+    border: none;
+    margin-bottom: 22px;
 }
 
 .footer {
     background: #000;
     min-height: 600px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #FFF;
 }
 
-.footer-content {
+.footer-content-row {
     display: flex;
-    align-items: center;
-    color: #fff;
+    margin-bottom: 40px;
 }
 
-.footer-row-content {
+.footer-content-recall {
+    width: 262px;
+}
 
+.footer-content-contacs {
+    width:30%;
 }
 
 .footer-line {
-
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer-contecs {
+.footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
 
+@media screen and (max-width: 1240px) {
+
+    
+    
 }
