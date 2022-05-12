@@ -1,6 +1,7 @@
 .body-container {
-    /* width: 100%;  */
-    width: 1920px;  
+    width: 100%; 
+    max-width: 1920px;  
+    min-width: 600px;
     min-height: 100%;
     margin: 0 auto;
     font-family: Graphik LCG;
@@ -17,6 +18,8 @@
 a {
     text-decoration: none;
     color: #fff;
+    font-size: 14px;
+    line-height: 26px;
 }
 
 a:hover {
@@ -34,6 +37,7 @@ a:hover {
     box-sizing: border-box;
     padding-top: 34px;
     padding-left: 24px;
+    padding-right: 20px;
 }
 
 .header {
@@ -100,6 +104,8 @@ a:hover {
 /* серая линия */
 .line {
     border: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: 39px;
+    margin-bottom: 23px;
 }
 
 .design-section-background {
@@ -187,6 +193,13 @@ a:hover {
     color: #fff;
 }
 
+.statistic-section-content-text {
+    width: 805px;
+    font-size: 18px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
 .statistic-section-counter {
     padding-top: 50px;
     display: flex;
@@ -213,6 +226,9 @@ a:hover {
 
 .statistic-section-mobile-text {
     width: 630px;
+    font-size: 18px;
+    line-height: 34px;
+    color: #FFFFFF;
 }
 
 .works-section {
@@ -234,7 +250,7 @@ a:hover {
 .work-section-images {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 
 .work-section-blocks {
@@ -292,6 +308,48 @@ a:hover {
 
 @media screen and (max-width: 1240px) {
 
+    .body-container,
+    .header,
+    .statistic-section,
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1200px;
+    }
+
     
+    .header-content-wrapper,
+    .text-section,
+    .ticket-section,
+    .statistic-section-content,
+    .works-section,
+    .footer-content {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .design-section-row1,
+    .design-section-row2,
+    .design-section-row3 {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .ticket-section-shedule {
+        display: none;
+    }
+
+    .statistic-section {
+        height: 100%;
+    }
     
+    .statistic-section-mobile {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    img {
+        display: inline-block;
+        text-align: center;
+    }
 }
