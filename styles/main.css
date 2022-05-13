@@ -50,13 +50,14 @@ a:hover {
 .header-img-background {
     background-repeat: no-repeat;
     background-image: url(../images/group-photo.svg);
-    width: 1005px;
-    height: 924px;  
+    /* width: 1005px; */
+    height: 924px; 
+    width: 100%;
+    background-position: top right;
 }
 
 .header-content-wrapper {
-    display: flex;
-    
+    display: flex;   
 }
 
 .header-content {
@@ -66,7 +67,6 @@ a:hover {
     font-size: 18px;
     line-height: 29px;
     color: #FFFFFF;
-
 }
 
 .logo {
@@ -87,9 +87,14 @@ a:hover {
 }
 
 .overlay-image {
-    box-sizing: border-box;
-    padding-top: 212px;
+    /* box-sizing: border-box;
+    padding-top: 212px; */
     transform: skew(-1deg, 2deg) scaleY(1.12) rotate(-2deg);
+    background-image: url(../images/notebook.svg);
+    height: 780px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .text-section-text {
